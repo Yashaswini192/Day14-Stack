@@ -7,13 +7,22 @@ public class StackMain {
 		StackImpl<Integer> S1 = new StackImpl();
 		S1.push(70);
 		System.out.println(S1.toString());
+
 		S1.push(30);
 		System.out.println("\n"+S1.toString());
+
 		S1.push(56);
 		System.out.println("\n"+S1.toString());
-		
-		/*S1.pop(56);
+
+		S1.pop(56);
 		System.out.println("\n"+S1.toString());
-	*/
-}
+
+		S1.pop(30);
+		System.out.println("\n"+S1.toString());
+
+		S1.pop(70);
+		System.out.println("\n"+S1.toString());
+		S1.pop(45);
+
+	}
 }
