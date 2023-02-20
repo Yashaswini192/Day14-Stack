@@ -49,6 +49,19 @@ public class StackImpl<S> {
 		}
 	}
 	 
+	public void dequeue(S item) {
+		  Node<S>node = new Node(item);
+		  if(top != null) {
+			  if(top.next != null) {
+				  top = top.next;
+			  }
+			  else {
+				  top = null;
+			  }
+			  }
+		  temp = null;
+		  }
+	
 	@Override
 	public String toString() {
 		return "StackImpl [top=" + top + ", peek=" + peek + ", temp=" + temp + "]";

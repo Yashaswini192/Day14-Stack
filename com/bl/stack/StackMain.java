@@ -24,11 +24,11 @@ public class StackMain {
 
 		S1.pop(70);
 		System.out.println("\n"+S1.toString());
-		S1.pop(45);
-
 		
+		S1.pop(45);
+				
 		//Queue Operations:
-		System.out.println("Queue Operations:");
+		System.out.println("\n Queue Operations:");
 		S1.enqueue(56);
 		System.out.println("\n"+S1.toString());
 		
@@ -41,6 +41,17 @@ public class StackMain {
 		S1.isEmpty();
 		System.out.println("\n "+S1.isEmpty());
 		
+		S1.dequeue(56);
+		System.out.println("\n"+S1.toString());
+		
+		S1.dequeue(30);
+		System.out.println("\n"+S1.toString());
+		
+		S1.dequeue(70);
+		System.out.println("\n"+S1.toString());
+		
+		S1.isEmpty();
+		System.out.println("\n "+S1.isEmpty());
 		
 		
 	}
