@@ -11,5 +11,9 @@ public class StackMain {
 		System.out.println("\n"+S1.toString());
 		S1.push(56);
 		System.out.println("\n"+S1.toString());
-	}
+		
+		/*S1.pop(56);
+		System.out.println("\n"+S1.toString());
+	*/
+}
 }

@@ -4,25 +4,25 @@ import java.util.LinkedList;
 
 public class StackImpl<S> {
 
-	public Node head;
-	public Node temp;
-	public Node tail;
+	public Node top;
+		
+	public Node peek;
 
 	public void push(S item) {
 		Node<S>node = new Node(item);
-		if(head == null) {
-			head = node;
-			tail = node;
+		if(top == null) {
+			top = node;
 			return;
 		}
-		temp = head;
-		head = node;
-		head.next = temp;
+		else {
+			node.next = top;
+			top = node;
+		}
 	}
 
 	@Override
 	public String toString() {
-		return "StackImpl [head=" + head + ", temp=" + temp + ", tail=" + tail + "]";
+		return "StackImpl [top=" + top + "]";
 	}
 
 }
